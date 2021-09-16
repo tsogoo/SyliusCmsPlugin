@@ -75,6 +75,16 @@ class Block implements BlockInterface
         $this->getBlockTranslation()->setContent($content);
     }
 
+    public function getJsonContent(): ?array
+    {
+        return $this->getBlockTranslation()->getJsonContent();
+    }
+
+    public function setJsonContent(?array $content): void
+    {
+        $this->getBlockTranslation()->setJsonContent($content);
+    }
+
     public function getLink(): ?string
     {
         return $this->getBlockTranslation()->getLink();

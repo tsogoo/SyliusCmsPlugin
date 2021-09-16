@@ -10,6 +10,9 @@
         <attribute name="content">
             <group>shop:cms:read</group>
         </attribute>
+        <attribute name="json_content">
+            <group>shop:cms:read</group>
+        </attribute>
         <attribute name="link">
             <group>shop:cms:read</group>
         </attribute>

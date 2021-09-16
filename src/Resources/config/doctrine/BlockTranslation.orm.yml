@@ -1,22 +1,26 @@
 BitBag\SyliusCmsPlugin\Entity\BlockTranslation:
-    type: mappedSuperclass
-    table: bitbag_cms_block_translation
+  type: mappedSuperclass
+  table: bitbag_cms_block_translation
+  id:
     id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
-    fields:
-        name:
-            column: name
-            type: string
-            nullable: true
-        content:
-            column: content
-            type: text
-            nullable: true
-        link:
-            column: link
-            type: text
-            nullable: true
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+  fields:
+    name:
+      column: name
+      type: string
+      nullable: true
+    content:
+      column: content
+      type: text
+      nullable: true
+    json_content:
+      column: json_content
+      type: json
+      nullable: true
+    link:
+      column: link
+      type: text
+      nullable: true

@@ -23,6 +23,10 @@ interface BlockTranslationInterface extends ResourceInterface, TranslationInterf
 
     public function setContent(?string $content): void;
 
+    public function getJsonContent(): ?array;
+
+    public function setJsonContent(?array $content): void;
+
     public function getLink(): ?string;
 
     public function setLink(?string $link): void;

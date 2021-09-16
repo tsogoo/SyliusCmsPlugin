@@ -24,6 +24,9 @@ class BlockTranslation extends AbstractTranslation implements BlockTranslationIn
     protected $content;
 
     /** @var string */
+    protected $json_content;
+
+    /** @var string */
     protected $link;
 
     public function getName(): ?string
@@ -44,6 +47,16 @@ class BlockTranslation extends AbstractTranslation implements BlockTranslationIn
     public function setContent(?string $content): void
     {
         $this->content = $content;
+    }
+
+    public function getJsonContent(): ?array
+    {
+        return $this->json_content;
+    }
+
+    public function setJsonContent(?array $content): void
+    {
+        $this->json_content = $content;
     }
 
     public function getId(): ?int
